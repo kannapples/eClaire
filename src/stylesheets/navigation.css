@@ -1,0 +1,49 @@
+@import "./slideTransitions.scss"
+
+
+  .main-title {
+    text-align: center;
+    font-family: nazare;
+    color: rgb(184, 159, 93);
+    font-size: 3em;
+    padding-bottom: 1em;
+  }
+  .custom-button.btn {
+    color: rgb(184, 159, 93);
+    border: 2px solid rgb(184, 78, 17);
+    width: 95%;
+    font-size: 1.4em;
+  }
+  .custom-button.btn:hover {
+    color: rgb(184, 78, 17);
+    border: 2px solid rgb(184, 78, 17);
+  }
+  #left-pane {
+    width: 40%;
+    height: 100vh;
+    margin-right: auto;
+    background-color: #08090a;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation-link {
+    display: block;
+    width: 100%;
+    margin: 1em;
+  }
+  #home-page-container {
+    background-image: url(../images/BW_smiling_with_hat.jpg);
+    background-size: 100%;
+    display: flex;
+  }
+
+  @font-face {
+    font-family: nazare;
+    src: url("https://use.typekit.net/oai1koi.css");
+  }
