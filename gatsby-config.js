@@ -1,18 +1,8 @@
-var proxy = require("http-proxy-middleware")
-
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-  },
-  developMiddleware: app => {
-    app.use(
-      "/api/",
-      proxy({
-        target: "http://localhost:3000"
-      })
-    )
+    title: `Claire Kannapell`,
+    description: `Personal Website and Portfolio`,
+    author: `@kannapples`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,11 +15,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Claire Kannapell`,
+        short_name: `eClaire`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -37,7 +29,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-sass`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

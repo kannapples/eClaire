@@ -11,9 +11,9 @@ import NavigationBar from "../components/navigationBar"
 const BackgroundSection = ({ className }) => {
   const data = useStaticQuery(graphql`
     query {
-      desktop: file(relativePath: { eq: "BW_smiling_with_hat.jpg" }) {
+      desktop: file(relativePath: { eq: "BW_smiling_with_hat.png" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -28,6 +28,7 @@ const BackgroundSection = ({ className }) => {
         Tag="section"
         className={className}
         fluid={imageData}
+        backgroundColor={`#ffffff`}
       >
         <div id="home-page-container"> 
           <SEO title="Home" />
