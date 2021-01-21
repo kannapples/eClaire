@@ -9,6 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
@@ -19,7 +20,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Claire Kannapell`,
         short_name: `eClaire`,
         start_url: `/`,
         background_color: `#663399`,
