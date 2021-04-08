@@ -1,12 +1,9 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import styled from "styled-components"
-import BackgroundImage from "gatsby-background-image"
-
-import SEO from "../components/seo"
-import NavigationBar from "../components/navigationBar"
-
-
+import React from 'react';
+import { useStaticQuery, graphql } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
+import styled from 'styled-components'
+import SEO from "../components/seo";
+import NavigationPane from "../components/navigationPane";
 
 const BackgroundSection = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -24,19 +21,19 @@ const BackgroundSection = ({ className }) => {
   const imageData = data.desktop.childImageSharp.fluid
 
   return (
-      <BackgroundImage
-        Tag="section"
-        className={className}
-        fluid={imageData}
-        backgroundColor={`#ffffff`}
+    <BackgroundImage
+      Tag="section"
+      className={className}
+      fluid={imageData}
+      backgroundColor={`#ffffff`}
       >
-        <div id="home-page-container"> 
+      <div id="home-page-container"> 
           <SEO title="Home" />
           <div id="left-pane" className="flex-container">
-            <NavigationBar />
+            <NavigationPane />
           </div>
-        </div>
-      </BackgroundImage>
+      </div>
+    </BackgroundImage>
   )
 }
 
@@ -45,6 +42,6 @@ const IndexPage = styled(BackgroundSection)`
   background-position: middle center;
   background-repeat: repeat-y;
   background-size: cover;
-`
+`;
 
-export default IndexPage
+export default IndexPage;
