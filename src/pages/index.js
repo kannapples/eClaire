@@ -29,9 +29,7 @@ const BackgroundSection = ({ className }) => {
       >
       <div id="home-page-container"> 
           <SEO title="Home" />
-          <div id="left-pane" className="flex-container">
-            <NavigationPane />
-          </div>
+          <NavigationPane />
       </div>
     </BackgroundImage>
   )

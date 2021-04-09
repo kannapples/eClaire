@@ -1,0 +1,13 @@
+@import '../stylesheets/color.scss';
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+    background-color: $eclaire-dark-blue;
+}
+.page-container {
+    display: flex;
+    flex-direction: row;
+}
