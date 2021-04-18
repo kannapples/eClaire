@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 1em;
+    width: 65%;
+    padding: 3em 1em;
+    background-color: $eclaire-mustard-light;
 }
 .page-container {
     display: flex;

@@ -2,5 +2,31 @@
 
 .show-info-container {
     padding: 15px;
-    outline: $eclaire-dark-grey solid 1px;
+    display: flex;
+    flex-direction: row;
+}
+.show-info-details {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.show-info-image {
+    flex: 0 0 150px;
+}
+.show-info-block {
+    display: flex;
+    flex-direction: row;
+}
+.show-info-date-time {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.show-info-address {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.show-info-description {
+    padding-bottom: 0.5em;
 }
