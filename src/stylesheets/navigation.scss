@@ -30,10 +30,16 @@ body {
   color: $eclaire-orange;
   border: 2px solid $eclaire-orange;
 }
+.activeLink {
+  background-color: $eclaire-orange;
+}
+.activeLink.btn:hover {
+  background-color: $eclaire-orange;
+  color: $eclaire-mustard;
+}
 .nav-left-pane {
   width: 35%;
   height: 100vh;
-  margin-right: auto;
   background-color: $eclaire-dark-grey;
   opacity: 0.8;
   display: flex;
@@ -91,6 +97,7 @@ body {
   padding: 0.5em;
   text-decoration: none;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 .subscribe-form-submit-button {
   background-color: $eclaire-mustard;
@@ -126,17 +133,4 @@ body {
   font-size: 1em;
   padding: 0.5em 0em 1em 0em;
   color: $eclaire-mustard;
-}
-#navbar {
-  transform: translateX(-150px);
-  transition: transform 400ms ease-in;
-  width: 100px;
-  color: white;
-  height: 100%;
-  background-color: black;
-  padding: 20px;
-  font-family: sans-serif;
-}
-#navbar.nav-top-pane {
-  transform: translateX(-100%);
 }

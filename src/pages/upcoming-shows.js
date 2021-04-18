@@ -8,7 +8,7 @@ export default function UpcomingShows() {
 
     return (
         <div className="page-container">
-            <NavigationPane />
+            <NavigationPane activePage='upcoming-shows'/>
             
             <div className="page-content">
                 <ShowInfo 

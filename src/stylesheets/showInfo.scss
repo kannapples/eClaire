@@ -1,3 +1,6 @@
+@import '../stylesheets/color.scss';
+
 .show-info-container {
     padding: 15px;
+    outline: $eclaire-dark-grey solid 1px;
 }
