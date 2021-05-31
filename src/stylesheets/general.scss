@@ -5,8 +5,11 @@
     flex-direction: column;
     height: 100vh;
     width: 65%;
-    padding: 3em 1em;
-    background-color: $eclaire-mustard-light;
+    padding: 2em;
+    background-color: $eclaire-mustard-translucent;
+    margin: 4em 3em 4em 1em;
+    border-radius: 1em;
+    border: 2px solid $eclaire-mustard-dark;
 }
 .page-container {
     display: flex;
