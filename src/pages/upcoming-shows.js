@@ -48,13 +48,13 @@ export default function UpcomingShows() {
                         altText="Charlie Painter Trio"
                     />
                 </div>
-                <div>
+                <div className="month-container">
                     <MonthMarker month="July" />
                     <NoShowInfo 
                         description="No Shows (yet!)"
                     />
                 </div>
-                <div>
+                <div className="month-container">
                     <MonthMarker month="August" />
                     <ShowInfo 
                         title="Old Oaks on the Sunn Cafe Patio"
