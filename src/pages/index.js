@@ -29,7 +29,7 @@ const BackgroundSection = ({ className }) => {
       >
       <div id="home-page-container"> 
           <SEO title="Home" />
-          <NavigationPane activePage=""/>
+          <NavigationPane activePage="" isMainPage={true}/>
       </div>
     </BackgroundImage>
   )

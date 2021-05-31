@@ -40,12 +40,14 @@ body {
 .nav-left-pane {
   width: 35%;
   height: 100vh;
-  background-color: $eclaire-dark-grey;
-  opacity: 0.8;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0em 3em;
+}
+.main-page-left-pane {
+  background-color: $eclaire-dark-grey;
+  opacity: 0.8;
 }
 #navigation {
   display: flex;

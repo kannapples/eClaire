@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby"
 import "../stylesheets/navigation.scss"
 import MailingListForm from "./mailingListForm";
 
-export default function NavigationPane({activePage}) {
+export default function NavigationPane({activePage, isMainPage}) {
 
     return (
-        <div id="navigation" className="nav-left-pane">    
+        <div id="navigation" className={`nav-left-pane ${isMainPage === true ? 'main-page-left-pane' : ''}`}>    
             <div className="main-title-container ">
                 <Link to="/" className="main-title">Claire Kannapell</Link>
             </div>
