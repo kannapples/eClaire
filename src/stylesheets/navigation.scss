@@ -4,7 +4,7 @@ body {
   margin: 0px;
 }
 .main-title {
-    font-family: nazare;
+    font-family: nazare, sans-serif;;
     color: $eclaire-mustard;
     font-size: 3em;
     padding-bottom: 0.5em;
@@ -44,8 +44,6 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0em 3em;
-}
-.main-page-left-pane {
   background-color: $eclaire-dark-grey;
   opacity: 0.8;
 }
@@ -59,7 +57,7 @@ body {
   margin: 1.5em 0em;
 }
 @font-face {
-  font-family: nazare;
+  font-family: nazare, sans-serif;;
   src: url("https://use.typekit.net/oai1koi.css");
 }
 .pageSlider-exit > .page {
@@ -129,10 +127,13 @@ body {
 .mailing-list-title {
   font-size: 1.5em;
   color: $eclaire-white;
-  font-family: nazare;
+  font-family: nazare, sans-serif;;
 }
 .mailing-list-description {
   font-size: 1em;
   padding: 0.5em 0em 1em 0em;
   color: $eclaire-mustard;
+}
+hr {
+  background-color: $eclaire-dark-grey;
 }

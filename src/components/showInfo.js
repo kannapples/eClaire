@@ -1,36 +1,22 @@
 import React from "react";
-import Image from "../components/Image";
-import "../stylesheets/showInfo.scss";
+import "../stylesheets/upcoming-shows.scss";
 
-export function ShowInfo({date, time, location, address, price, description, imgSrc, altText}) {
+export function ShowInfo({date, time, location, address, price, bandName}) {
     return (
-        <div className="show-info-container">
-            <div className="show-info-image">
-                {imgSrc !== '' &&
-                    <Image 
-                        src={imgSrc}
-                        alt={altText}
-                    />
-                }
-                {imgSrc === '' &&
-                    <div className="band-logo-alt-text">{altText}</div>
-                }
+        <div className="show-info-container">            
+            <div className="show-info-block-1">
+                <span className="">{date}</span>
+                <span className="">{time}</span>
             </div>
-            
-            <div className="show-info-details">
-                <div className="show-info-date-time">
-                    <span className="show-info-tag">{date}</span>
-                    <span className="show-info-tag">{time}</span>
+            <div className="show-info-block-2">
+                <span className="show-info-band-name">{bandName}</span>
+            </div>
+            <div className="show-info-block-3">
+                <div className="show-info-address">
+                    <span className="">{location}</span>
+                    <span className="">{address}</span>
+                    <span className="">{price}</span>
                 </div>
-                <div className="show-info-block">
-                    <div className="show-info-address">
-                        <span className="show-info-tag">{location}</span>
-                        <span className="show-info-tag">{address}</span>
-                        <span className="show-info-tag">{price}</span>
-                    </div>
-                    <div className="show-info-description">{description}</div>
-                </div>
-                
             </div>
         </div>
     );
