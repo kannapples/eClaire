@@ -1,0 +1,78 @@
+@import '../stylesheets/color.scss';
+
+.horizontal-line {
+    border-top: 0.1em solid $eclaire-mustard-dark;
+}
+.show-info-container {
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    color: $eclaire-dark-grey;
+    font-family: brandon-grotesque, sans-serif;
+    align-items: center;
+    justify-content: center;
+    
+}
+.show-info-block-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    text-align: left;
+}
+.show-info-block-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    text-align: center;
+}
+.show-info-block-3 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    text-align: right;
+}
+.show-info-date-time {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    font-size: 1em;
+    font-style: normal;
+    padding-bottom: 1em;
+    opacity: 0.9;
+}
+.show-info-address {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.show-info-description {
+    padding-bottom: 0.5em;
+    flex: 1.5;
+}
+.show-info-band-name {
+    font-size: 1.2em;
+}
+.month-marker {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+    color: $eclaire-dark-grey;
+    opacity: 0.9;
+    text-align: center;
+    padding-bottom: 0.7em;
+}
+.month-container {
+    padding: 1em 2em;
+    background-color: $eclaire-mustard-translucent;
+    border-radius: 1em;
+    border: 2px solid $eclaire-mustard-dark;
+    margin-bottom: 2em;
+}
+.band-logo-alt-text {
+    font-family: arbotek, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+    padding: 0em 0.5em;
+}
