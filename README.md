@@ -1,6 +1,10 @@
 ## Deploying to DigitalOcean droplet:
 https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
 
+## Serving DigitalOcean Droplet through Cloudflare
+- If domain is registered through HostGator, make sure the nameservers have been overridden to use the cloudflare nameservers
+- Will want an A record for the IPv4 address (clairekannapell.com), and a CNAME record resolving www to the domain name.
+
 ## Gatsby structure
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
