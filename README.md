@@ -1,5 +1,10 @@
 ## Deploying to DigitalOcean droplet:
-https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
+initial set-up: https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
+regular deploys:
+1. ssh into droplet
+2. navigate to `/users/claire/eClaire`
+3. pull your most recent changes
+4. run `sudo gatsby build`
 
 ## Serving DigitalOcean Droplet through Cloudflare
 - If domain is registered through HostGator, make sure the nameservers have been overridden to use the cloudflare nameservers
