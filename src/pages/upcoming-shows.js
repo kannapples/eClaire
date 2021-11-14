@@ -42,8 +42,9 @@ const BackgroundSection = ({ className }) => {
   const UpcomingShowContent = () => {
     return (
         <div className="upcoming-show-page-content">
-            <MonthMarker month="June" />
+            
             <div className="month-container">
+                <MonthMarker month="June" />
                 <ShowInfo 
                     title="'The Day Before Yesterday' Album Release Show (Mt. Horeb)"
                     date="Friday, June 04"
@@ -70,14 +71,16 @@ const BackgroundSection = ({ className }) => {
                     bandName="Charlie Painter Trio"
                 />
             </div>
-            <MonthMarker month="July" />
+            
             <div className="month-container">
+                <MonthMarker month="July" />
                 <NoShowInfo 
                     description="No Shows (yet!)"
                 />
             </div>
-            <MonthMarker month="August" />
+            
             <div className="month-container">
+                <MonthMarker month="August" />
                 <ShowInfo 
                     title="Old Oaks on the Sunn Cafe Patio"
                     date="Saturday, August 28"
