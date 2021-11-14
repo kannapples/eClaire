@@ -1,5 +1,15 @@
 ## Deploying to DigitalOcean droplet:
-https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
+initial set-up: https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
+regular deploys:
+1. ssh into droplet
+2. navigate to `/users/claire/eClaire`
+3. pull your most recent changes
+4. run `sudo gatsby build`
+
+## Serving DigitalOcean Droplet through Cloudflare
+- If domain is registered through HostGator, make sure the nameservers have been overridden to use the cloudflare nameservers
+- Will want an A record for the IPv4 address (clairekannapell.com), and a CNAME record resolving www to the domain name.
+- SSL certificate installed through this tutorial: https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-20-04
 
 ## Gatsby structure
 
