@@ -9,6 +9,7 @@ regular deploys:
 ## Serving DigitalOcean Droplet through Cloudflare
 - If domain is registered through HostGator, make sure the nameservers have been overridden to use the cloudflare nameservers
 - Will want an A record for the IPv4 address (clairekannapell.com), and a CNAME record resolving www to the domain name.
+- SSL certificate installed through this tutorial: https://www.digitalocean.com/community/tutorials/how-to-host-a-website-using-cloudflare-and-nginx-on-ubuntu-20-04
 
 ## Gatsby structure
 
