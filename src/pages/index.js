@@ -6,32 +6,32 @@ import SEO from "../components/seo";
 import NavigationPane from "../components/navigationPane";
 
 const BackgroundSection = ({ className }) => {
-  // const { desktop } = useStaticQuery(graphql`
-  //   query {
-  //     desktop: file(relativePath: { eq: "ClaireKannapell_pressphoto.jpg" }) {
-  //       childImageSharp {
-  //         fluid(quality: 90, maxWidth: 1920) {
-  //           ...GatsbyImageSharpFluid_withWebp
-  //         }
-  //       }
-  //     }
-  //   }`
-  // );
+  const { desktop } = useStaticQuery(graphql`
+    query {
+      desktop: file(relativePath: { eq: "ClaireKannapell_pressphoto.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }`
+  );
 
-  // const imageData = desktop.childImageSharp.fluid;
+  const imageData = desktop.childImageSharp.fluid;
 
   return (
-    // <BackgroundImage
-    //   Tag="section"
-    //   className={className}
-    //   fluid={imageData}
-    //   backgroundColor={`#ffffff`}
-    //   >
+    <BackgroundImage
+      Tag="section"
+      className={className}
+      fluid={imageData}
+      backgroundColor={`#ffffff`}
+      >
       <div id="home-page-container"> 
           <SEO title="Home" />
           <NavigationPane activePage=""/>
       </div>
-    // </BackgroundImage>
+    </BackgroundImage>
   )
 }
 
