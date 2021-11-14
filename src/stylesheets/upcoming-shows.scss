@@ -11,7 +11,6 @@
     font-family: brandon-grotesque, sans-serif;
     align-items: center;
     justify-content: center;
-    
 }
 .show-info-block-1 {
     display: flex;
@@ -75,4 +74,11 @@
     font-style: normal;
     font-size: 2em;
     padding: 0em 0.5em;
+}
+.upcoming-show-page-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    // padding: 2em;
+    margin: 4em 3em 4em 1em;
 }
