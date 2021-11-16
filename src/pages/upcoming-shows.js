@@ -42,7 +42,6 @@ const BackgroundSection = ({ className }) => {
   const UpcomingShowContent = () => {
     return (
         <div className="upcoming-show-page-content">
-            
             <div className="month-container">
                 <MonthMarker month="June" />
                 <ShowInfo 

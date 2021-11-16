@@ -11,10 +11,10 @@ export default function NavigationPane({activePage}) {
                 <Link to="/" className="main-title">Claire Kannapell</Link>
             </div>
             <div className="navigation-link">
-                <Link to="/upcoming-shows" className={`btn btn-lg custom-button ${activePage === 'upcoming-shows' ? 'activeLink' : ''}`}>Upcoming Shows</Link>
+                <Link to="/current-projects" className={`btn btn-lg custom-button ${activePage === 'current-projects' ? 'activeLink' : ''}`}>Current Projects</Link>
             </div>
             <div className="navigation-link">
-                <Link to="/current-projects" className={`btn btn-lg custom-button ${activePage === 'current-projects' ? 'activeLink' : ''}`}>Current Projects</Link>
+                <Link to="/upcoming-shows" className={`btn btn-lg custom-button ${activePage === 'upcoming-shows' ? 'activeLink' : ''}`}>Upcoming Shows</Link>
             </div>
             <div className="navigation-link">
                 <Link to="/previous-work" className={`btn btn-lg custom-button ${activePage === 'previous-work' ? 'activeLink' : ''}`}>Previous Work</Link>
