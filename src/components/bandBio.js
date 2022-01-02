@@ -3,11 +3,11 @@ import Img from 'gatsby-image';
 
 export default function BandBio(props) {
     return (
-        <div>
-            <span className='bandName'>{props.bandName}</span>
-            <div className='bandDescription'>{props.bandDescription}</div>
-            <Img fluid={props.bandPhoto1} alt={props.bandPhoto1AltText} />
-            <Img fluid={props.bandPhoto2} alt={props.bandPhoto2AltText} />
+        <div className='band-bio'>
+            <span className='band-name'>{props.name}</span>
+            <div className='band-description'>{props.description}</div>
+            <Img fixed={props.photo1} alt={props.photo1AltText} className='band-photo-1' />
+            <Img fixed={props.photo2} alt={props.photo2AltText} className='band-photo-2' />
         </div>
     )
 }

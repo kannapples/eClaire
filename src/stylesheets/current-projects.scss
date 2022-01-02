@@ -1,0 +1,44 @@
+@import '../stylesheets/color.scss';
+
+.current-projects-page-content {
+    width: 55%;
+    margin: 4em 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.current-projects-page-container {
+    background-color: $eclaire-dark-grey-translucent;
+    display: flex;
+    flex-direction: column;
+}
+.band-bio-card-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.band-bio-card-container {
+    position: relative;
+    width: 400px;
+    display: flex;
+    padding: 1.1em;
+    margin: 1.9em 0.7em;
+}
+.band-bio-card-name {
+    font-family: nazare, sans-serif;
+    color: $eclaire-orange;
+    font-size: 4em;
+    text-align: left;
+}
+.band-bio-card-genre {
+    // font-family: nazare, sans-serif;
+    color: $eclaire-orange;
+    font-size: 2em;
+    text-align: left;
+    position: absolute;
+    bottom: -15px;
+    left: 18px;
+}
