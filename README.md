@@ -1,5 +1,8 @@
 ## Deploying to DigitalOcean droplet:
 initial set-up: https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
+
+to give a new user ssh permissions: https://www.digitalocean.com/community/questions/secure-ubuntu-server-for-non-root-user-using-only-ssh-keys?answer=22286
+
 regular deploys:
 1. ssh into droplet
 2. navigate to `/users/claire/eClaire`
