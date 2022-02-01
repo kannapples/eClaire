@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from "gatsby";
-import BandBio from '../components/bandBio';
 import BandBioCard from '../components/bandBioCard';
+import BandDetailCard from '../components/bandDetailCard';
 import NavigationPane from '../components/navigationPane';
 import "../stylesheets/current-projects.scss";
 
 export default function CurrentProjects() {
+    const [showBandDetail, setShowBandDetail] = useState(false);
     const { oldOaks1, oldOaks2 } = useStaticQuery(graphql`
     query {
         oldOaks1: file(relativePath: { eq: "Woodrow_bur_oak.jpg" }) {
@@ -30,6 +31,8 @@ export default function CurrentProjects() {
     }`
     )
 
+    const showBandDetailModal = showBandDetail ? "modal display-block" : "modal display-none";
+
     return (
         <div className='page-container'>
             <NavigationPane activePage='current-projects'/>
@@ -38,7 +41,19 @@ export default function CurrentProjects() {
                     name='Old Oaks'
                     genre='Folk-Funk'
                     photo1={oldOaks1.childImageSharp.fixed}
+                    //onlick
                 />
+                {showBandDetailModal &&
+                    <BandDetailCard
+                        name='Old Oaks' 
+                        description={`A funky fusion of folk and jazz, Old Oaks is led by soulful vocalist and guitarist Frank Laufenberg, 
+                                        accompanied by powerhouse saxophonist/flautist Daniel Haschke and Claire Kannapell's funky rhythms on the upright bass.`}
+                        photo1={oldOaks1.childImageSharp.fixed}
+                        photo1AltText={'Old Oaks Trio standing together and smiling.'}
+                        photo2={oldOaks2.childImageSharp.fixed}
+                        photo2AltText={'Old Oaks Trio in action at a show.'}
+                    />
+                }
                 <BandBioCard
                     name='Bad Mustard'
                     genre='Jazz Fusion/Neo-Soul'
@@ -49,15 +64,6 @@ export default function CurrentProjects() {
                     genre='Vocal Trio'
                     photo1={oldOaks1.childImageSharp.fixed}
                 />
-                {/* <BandBio 
-                    name='Old Oaks' 
-                    description={`A funky fusion of folk and jazz, Old Oaks is led by soulful vocalist and guitarist Frank Laufenberg, 
-                                    accompanied by powerhouse saxophonist/flautist Daniel Haschke and Claire Kannapell's funky rhythms on the upright bass.`}
-                    photo1={oldOaks1.childImageSharp.fixed}
-                    photo1AltText={'Old Oaks Trio standing together and smiling.'}
-                    photo2={oldOaks2.childImageSharp.fixed}
-                    photo2AltText={'Old Oaks Trio in action at a show.'}
-                /> */}
             </div>
         </div>
     );
