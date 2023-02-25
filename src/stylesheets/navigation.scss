@@ -133,6 +133,17 @@ body {
   padding: 0.5em 0em 1em 0em;
   color: $eclaire-mustard;
 }
+.body-text {
+  color: $eclaire-mustard;
+  padding: 1.5em 5em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  a {
+    color: $eclaire-mustard;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
 hr {
   background-color: $eclaire-dark-grey;
 }

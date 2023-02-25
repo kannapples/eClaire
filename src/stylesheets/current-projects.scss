@@ -3,14 +3,17 @@
 .current-projects-page-content {
     width: 55%;
     margin: 4em 2em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    position: relative;
 }
 .current-projects-page-container {
     background-color: $eclaire-dark-grey-translucent;
     display: flex;
     flex-direction: column;
+}
+.band-bio-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .band-bio-card-info {
     display: flex;
@@ -20,18 +23,39 @@
     left: 0;
     height: 100%;
 }
-.band-bio-card-container {
+.band-bio-card-details {
     position: relative;
     width: 400px;
     display: flex;
+    flex-direction: column;
     padding: 1.1em;
     margin: 1.9em 0.7em;
+}
+.band-bio-hover {
+    background-color: $eclaire-mustard-dark;
+    width: 435px;
+    height: 355px;
+    opacity: 0.6;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    margin: 1.1em 0.7em;
+    z-index: -2;
+}
+.band-bio-card-details:hover ~ .band-bio-hover {
+    display: inline-block;
+    cursor: pointer;
 }
 .band-bio-card-name {
     font-family: nazare, sans-serif;
     color: $eclaire-orange;
     font-size: 4em;
     text-align: left;
+    position: absolute;
+    top: -15px;
+}
+.band-bio-card {
+    z-index: -1;
 }
 .band-bio-card-genre {
     // font-family: nazare, sans-serif;
@@ -43,6 +67,19 @@
     left: 18px;
 }
 .band-detail-card-container {
-    display: flex;
-    
+    position: absolute;
+    left: 20%;
+    top: 2em;
+    z-index: 10;
+    width: 600px;
+    border-radius: 1em;
+    color: black;
+    background-color: $eclaire-dark-grey-translucent;
+    display: grid;
+}
+.band-detail-card-title {
+    font-family: nazare, sans-serif;
+    color: $eclaire-orange;
+    font-size: 4em;
+    text-align: left;
 }
