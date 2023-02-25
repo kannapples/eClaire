@@ -1,3 +1,10 @@
+## Stack Info
+1. Server is a [DigitalOcean droplet](https://cloud.digitalocean.com/projects/b4e3e398-c55a-4b4f-8389-d06ccfc3f2cb/resources?i=a4511c)
+2. Domain is hosted on HostGator
+3. CDN (content delivery network) provided through Cloudflare
+4. Frontend framework
+
+
 ## Deploying to DigitalOcean droplet:
 initial set-up: https://www.gatsbyjs.com/docs/deploying-to-digitalocean-droplet/
 
